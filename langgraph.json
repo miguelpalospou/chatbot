@@ -1,0 +1,21 @@
+{
+  "dockerfile_lines": [],
+  "graphs": {
+    "sales_agent": "./src/graph.py:graph"
+  },
+  "env": ".env",
+  "config": {
+    "chat": true
+  },
+  "python_version": "3.11",
+  "dependencies": [
+    "boto3",
+    "python-dotenv",
+    "langchain-core",
+    "langchain-openai",
+    "langgraph",
+    "openai",
+    "typing-extensions",
+    "."
+  ]
+}
