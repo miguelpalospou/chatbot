@@ -40,7 +40,10 @@ class SalesState(TypedDict, total=False):
 
 class AWSData:
     def __init__(self):
-        self.dynamodb = boto3.resource('dynamodb')
+        self.dynamodb = boto3.resource('dynamodb', 
+                                       aws_access_key_id=AWS_ACCESS_KEY_ID,
+                                       aws_secret_access_key=AWS_SECRET_ACCESS_KEY,
+                                       region_name=AWS_DEFAULT_REGION)
         self.deals_table = self.dynamodb.Table('Deals')
         self.tasks_table = self.dynamodb.Table('Tasks')
         
