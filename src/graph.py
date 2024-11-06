@@ -8,10 +8,10 @@ from langchain_openai import ChatOpenAI
 from langchain_core.messages import SystemMessage, HumanMessage
 from typing import Dict
 from langgraph.graph import StateGraph, Graph, END
-
+OPENAI_API_KEY="sk-tp-3vC_nmP5nt0_-GkyRO9r1KHsW8Yo1MF65tkeNhcT3BlbkFJl5CsVh1FpIqjDNJO85QcZLlu_NFy1CbEfkNIR7EIUA"
 # Load environment variables
 load_dotenv()
-llm = ChatOpenAI(model="gpt-4", api_key=os.getenv("OPENAI_API_KEY"))
+llm = ChatOpenAI(model="gpt-4", api_key=OPENAI_API_KEY)
 #os.environ["LANGCHAIN_API_KEY"]=str(os.getenv("LANGCHAIN_API_KEY"))
 #os.environ["LANGCHAIN_ENDPOINT"]="https://eu.api.smith.langchain.com"
 #os.environ["LANGCHAIN_ENDPOINT"]="https://api.smith.langchain.com"
