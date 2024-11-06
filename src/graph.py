@@ -9,6 +9,9 @@ from langchain_core.messages import SystemMessage, HumanMessage
 from typing import Dict
 from langgraph.graph import StateGraph, Graph, END
 OPENAI_API_KEY="sk-tp-3vC_nmP5nt0_-GkyRO9r1KHsW8Yo1MF65tkeNhcT3BlbkFJl5CsVh1FpIqjDNJO85QcZLlu_NFy1CbEfkNIR7EIUA"
+AWS_ACCESS_KEY_ID="AKIA563XCBSNWV4QGV6I"
+AWS_SECRET_ACCESS_KEY="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"
+AWS_DEFAULT_REGION="us-east-1"
 # Load environment variables
 load_dotenv()
 llm = ChatOpenAI(model="gpt-4", api_key=OPENAI_API_KEY)
